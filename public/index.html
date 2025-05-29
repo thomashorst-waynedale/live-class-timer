@@ -1,0 +1,24 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Live Class Timer</title>
+  <style>
+    body { font-family: sans-serif; text-align: center; background: #f9f9f9; }
+    #timer { font-size: 48px; margin-top: 30px; }
+    button { font-size: 18px; margin: 5px; padding: 10px 20px; }
+  </style>
+</head>
+<body>
+  <h1>Live Class Timer</h1>
+  <div id="timer">0:00</div>
+  <div id="controls">
+    <button onclick="startTimer()">▶️ Start</button>
+    <button onclick="pauseTimer()">⏸️ Pause</button>
+    <button onclick="resetTimer()">🔁 Reset</button>
+  </div>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="client.js"></script>
+</body>
+</html>
